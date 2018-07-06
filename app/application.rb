@@ -6,7 +6,7 @@ class Application
     t = Time.now <=> 12
     if t = -1
       resp.write "Good Morning!"
-    else
+    elsif t = 0 || t = 1
       resp.write "Good Afternoon!"
     end
 
