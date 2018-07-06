@@ -4,6 +4,7 @@ class Application
     resp = Rack::Response.new
 
     t = Time.now <=> 12
+    binding.pry
     if t = -1
       resp.write "Good Morning!"
     elsif t = 0 || t = 1
